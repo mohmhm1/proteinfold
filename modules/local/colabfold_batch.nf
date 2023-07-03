@@ -1,6 +1,6 @@
 process COLABFOLD_BATCH {
     tag "$meta.id"
-    label 'process_medium'
+    label 'process_gpu'
 
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
         'docker://nfcore/proteinfold_colabfold:1.0.0' :
