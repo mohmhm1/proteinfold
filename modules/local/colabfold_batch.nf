@@ -1,7 +1,7 @@
 process COLABFOLD_BATCH {
     tag "$meta.id"
     label 'process_gpu'
-    queue = 'G5JobQueue-Pars8OF5CjDEotBV'
+    queue = 'TowerForge-2oPJNnvJBc78EIX0NgLyYl'
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
         'docker://nfcore/proteinfold_colabfold:1.0.0' :
         'nfcore/proteinfold_colabfold:1.0.0' }"
